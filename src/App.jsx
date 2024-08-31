@@ -61,7 +61,7 @@ const App = () => {
   return (
     <div className="App">
       <div className="control-panel">
-        {isRunning || gameOver ? <h1>Score: {score}</h1> : ""}
+        {isRunning || gameOver ? <h1>Score: {score}</h1> : <h1>Collect Balls</h1>}
 
         {gameOver && <h2>Game Over!</h2>}
         <button onClick={toggleGame}>
